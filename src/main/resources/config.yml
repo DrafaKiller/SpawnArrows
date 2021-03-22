@@ -1,0 +1,212 @@
+arrows:
+  craftable: true
+  upgradeable: true
+  max-upgrade: 100
+  recipe-discover: true
+
+entities:
+  accurate-spawn: true
+  attack-owner: false
+  drops-items: false
+  drops-xp: false
+  lifetime: true
+  lifetime-per-level:
+    - 10
+    - 15
+    - 25
+    - 40
+    - 60
+    - 75
+    - 100
+    - 150
+    - 240
+    - 320
+  # - ...
+
+recipes:
+  #
+  #  <EntityType>:
+  #    color: { r: <int>, g: <int>, b: <int> }
+  #    level: <int>
+  #    lifetime: <double>
+  #    ingredients:
+  #      - <Material>: <amount>
+  #      - ...
+  #
+  #  <EntityType> and <Material> must be valid.
+  #  Total ingredient <amount> must be more than 0 and less or equal than 9, the amount is an integer.
+  #  [color] is optional. As well as each [r], [g] and [b], default is 255.
+  #  [level] is the amount of mobs to spawn, optional.
+  #  [lifetime] is the amount of seconds they stay alive, can be a decimal, optional. (0 or lower means no lifetime)
+  #
+  ZOMBIE:
+    color: { r: 81, g: 118, b: 63 }
+    ingredients:
+      - ARROW: 1
+      - ROTTEN_FLESH: 8
+
+  SKELETON:
+    color: { r: 193, g: 193, b: 193 }
+    ingredients:
+      - ARROW: 1
+      - BONE: 4
+      - ARROW: 4
+
+  CREEPER:
+    color: { r: 75, g: 204, b: 58 }
+    ingredients:
+      - ARROW: 1
+      - GUNPOWDER: 8
+
+  SPIDER:
+    color: { r: 78, g: 67, b: 57 }
+    ingredients:
+      - ARROW: 1
+      - STRING: 4
+      - SPIDER_EYE: 4
+
+  CAVE_SPIDER:
+    color: { r: 54, g: 66, b: 54 }
+    ingredients:
+      - ARROW: 1
+      - STRING: 4
+      - FERMENTED_SPIDER_EYE: 4
+
+  ENDERMAN:
+    color: { r: 50, g: 50, b: 50 }
+    ingredients:
+      - ARROW: 1
+      - ENDER_PEARL: 8
+
+  BLAZE:
+    color: { r: 235, g: 185, b: 35 }
+    ingredients:
+      - ARROW: 1
+      - BLAZE_ROD: 8
+
+  SLIME:
+    color: { r: 101, g: 178, b: 79 }
+    ingredients:
+      - ARROW: 1
+      - SLIME_BALL: 8
+
+  MAGMA_CUBE:
+    color: { r: 90, g: 0, b: 0 }
+    ingredients:
+      - ARROW: 1
+      - MAGMA_CREAM: 8
+
+  GHAST:
+    color: { r: 240, g: 240, b: 240 }
+    ingredients:
+      - ARROW: 1
+      - GHAST_TEAR: 8
+
+  WITHER_SKELETON:
+    color: { r: 49, g: 49, b: 49 }
+    ingredients:
+      - ARROW: 1
+      - WITHER_SKELETON_SKULL: 1
+      - BONE: 7
+
+  SHULKER:
+    color: { r: 152, g: 105, b: 152 }
+    ingredients:
+      - ARROW: 1
+      - SHULKER_SHELL: 8
+
+  GUARDIAN:
+    color: { r: 102, g: 138, b: 129 }
+    ingredients:
+      - ARROW: 1
+      - PRISMARINE_SHARD: 4
+      - PRISMARINE_CRYSTALS: 4
+
+  COW:
+    color: { r: 66, g: 51, b: 33 }
+    ingredients:
+      - ARROW: 1
+      - BEEF: 4
+      - LEATHER: 4
+
+  PIG:
+    color: { r: 239, g: 166, b: 165 }
+    ingredients:
+      - ARROW: 1
+      - PORKCHOP: 8
+
+  SHEEP:
+    color: { r: 248, g: 246, b: 245 }
+    ingredients:
+      - ARROW: 1
+      - MUTTON: 4
+      - WHITE_WOOL: 4
+
+  CHICKEN:
+    color: { r: 227, g: 227, b: 227 }
+    ingredients:
+      - ARROW: 1
+      - CHICKEN: 4
+      - FEATHER: 4
+
+  RABBIT:
+    color: { r: 145, g: 124, b: 97 }
+    ingredients:
+      - ARROW: 1
+      - RABBIT: 4
+      - RABBIT_HIDE: 4
+
+  SNOWMAN:
+    color: { r: 228, g: 145, b: 23 }
+    ingredients:
+      - ARROW: 1
+      - CARVED_PUMPKIN: 4
+      - SNOW_BLOCK: 4
+
+  IRON_GOLEM:
+    color: { r: 209, g: 209, b: 209 }
+    ingredients:
+      - ARROW: 1
+      - IRON_BLOCK: 8
+
+  BEE:
+    color: { r: 238, g: 196, b: 65 }
+    ingredients:
+      - ARROW: 1
+      - HONEY_BLOCK: 8
+
+  SQUID:
+    color: { r: 83, g: 109, b: 129 }
+    ingredients:
+      - ARROW: 1
+      - INK_SAC: 8
+
+  PUFFERFISH:
+    color: { r: 248, g: 165, b: 12 }
+    ingredients:
+      - ARROW: 1
+      - PUFFERFISH: 8
+
+  COD:
+    color: { r: 199, g: 163, b: 114 }
+    ingredients:
+      - ARROW: 1
+      - COD: 8
+
+  SALMON:
+    color: { r: 217, g: 71, b: 69 }
+    ingredients:
+      - ARROW: 1
+      - SALMON: 8
+
+  TROPICAL_FISH:
+    color: { r: 241, g: 110, b: 32 }
+    ingredients:
+      - ARROW: 1
+      - TROPICAL_FISH: 8
+
+  TURTLE:
+    color: { r: 69, g: 192, b: 73 }
+    ingredients:
+      - ARROW: 1
+      - SCUTE: 8
