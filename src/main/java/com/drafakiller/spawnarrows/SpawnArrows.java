@@ -1,6 +1,5 @@
 package com.drafakiller.spawnarrows;
 
-import com.destroystokyo.paper.Namespaced;
 import com.drafakiller.spawnarrows.listeners.*;
 import org.bukkit.*;
 import org.bukkit.entity.*;

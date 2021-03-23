@@ -60,6 +60,7 @@ public abstract class LocationUtil {
 		}
 		return location;
 	}
+	
 	public static Location setAvailableLocationZ(Location location, BoundingBox boundingBox) {
 		double width = Math.max(boundingBox.getWidthX(), boundingBox.getWidthZ());
 		double halfWidth = width / 2;
@@ -103,6 +104,16 @@ public abstract class LocationUtil {
 			setAvailableLocationZ(location, boundingBox);
 			setAvailableLocationY(location, boundingBox);
 		}
+		return location;
+	}
+	
+	public static Location limitLocation(Location location, BoundingBox boundingBox) {
+		location.set(
+			Math.min(Math.max(location.getX(), boundingBox.getMinX()), boundingBox.getMaxX()),
+			Math.min(Math.max(location.getY(), boundingBox.getMinY()), boundingBox.getMaxY()),
+			Math.min(Math.max(location.getZ(), boundingBox.getMinZ()), boundingBox.getMaxZ())
+		);
+		
 		return location;
 	}
 	

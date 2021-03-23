@@ -33,6 +33,7 @@ public class ProjectileHitListener implements Listener {
 			Location location = projectile.getLocation();
 			Block hitBlock = event.getHitBlock();
 			BlockFace blockFace = event.getHitBlockFace();
+			Entity hitEntity = event.getHitEntity();
 
 			if (hitBlock != null && blockFace != null) {
 				if (accurateSpawn) {
@@ -41,6 +42,8 @@ public class ProjectileHitListener implements Listener {
 					location = hitBlock.getLocation().add(blockFace.getDirection()).toCenterLocation();
 					location.setY(hitBlock.getY() + blockFace.getModY());
 				}
+			} else if (hitEntity != null) {
+				LocationUtil.limitLocation(location, hitEntity.getBoundingBox());
 			}
 			
 			Player player = null;
